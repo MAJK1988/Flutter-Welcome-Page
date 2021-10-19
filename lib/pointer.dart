@@ -44,16 +44,5 @@ class _PointerState extends State<Pointer> {
         ],
       ),
     );
-    /*if (widget.index == widget.length - 1)
-          Align(
-              alignment: Alignment.bottomRight,
-              child: TextButton(
-                onPressed: () {},
-                child: Text('TextButton'),
-              ))
-        else
-          const SizedBox.shrink()
-      ],
-    );*/
   }
 }

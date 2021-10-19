@@ -1,7 +1,7 @@
 List items = [
   {
     "header": "Description",
-    "description": "Real time online monitoring of power electric consumption",
+    "description": "Real time monitoring of electric power consumption",
     "image": "assets/images/1.PNG"
   },
   {

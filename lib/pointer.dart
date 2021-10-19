@@ -17,7 +17,7 @@ class _PointerState extends State<Pointer> {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      bottom: 40,
+      bottom: 15,
       width: MediaQuery.of(context).size.width,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -41,17 +41,19 @@ class _PointerState extends State<Pointer> {
                 ),
               ),
             ),
-          if (widget.index == widget.length - 1)
-            Align(
-                alignment: Alignment.topRight,
-                child: TextButton(
-                  onPressed: () {},
-                  child: Text('TextButton'),
-                ))
-          else
-            const SizedBox.shrink()
         ],
       ),
     );
+    /*if (widget.index == widget.length - 1)
+          Align(
+              alignment: Alignment.bottomRight,
+              child: TextButton(
+                onPressed: () {},
+                child: Text('TextButton'),
+              ))
+        else
+          const SizedBox.shrink()
+      ],
+    );*/
   }
 }

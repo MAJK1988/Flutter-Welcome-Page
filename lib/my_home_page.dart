@@ -113,7 +113,24 @@ class _MyHomePageState extends State<MyHomePage> {
                   });
                   return slideView(index);
                 }),
-            Pointer(index: pageIndex, length: items.length)
+            Pointer(index: pageIndex, length: items.length),
+            if (pageIndex == items.length - 1)
+              Positioned(
+                  left: MediaQuery.of(context).size.width * 0.85,
+                  bottom: 10,
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      IconButton(
+                        icon: const Icon(Icons.east),
+                        tooltip: 'Increase volume by 10',
+                        onPressed: () {
+                          setState(() {});
+                        },
+                      ),
+                      //Text('Volume ')
+                    ],
+                  ))
           ],
         ));
   }
